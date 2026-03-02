@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* selector{
+    property; value;
+ }*/
+ h1{
+    color: blue;
+    background-color: red;
+ }
+
+ p{
+    color: green;
+ }
+
+ li{
+    color: brown;
+ }
+
+ /* body h1{
+ color: green;
+ background-color: bluevoilet;
+}*/
+
+.team-blue{
+    color: blue;
+}
+
+.team-red{
+    color: red;
+}
+.team-purple{
+    color: purple;
+}
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+h2,h3{
+    background-color: red;
+    margin-bottom: 10px;
+
+}
+
+body p{
+    color: green;
+}
+
+form p{
+    color: indigo;
+}
+
+h1 + p {
+    background-color: turquoise;
+}
+#submit-btn{
+    background-color: white;
+    color:green;
+    border: 1px solid green;
+}
+#submit-btn:hover{
+       background-color: green;
+       color: white;
+
+}
+
+input{
+    background-color: ;
+    
+}

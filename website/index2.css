@@ -1,0 +1,9 @@
+section h1:last-child{
+    color:red;
+}
+section h1:nth-child(1){
+    color: green;
+}
+section h1:nth-child(2){
+    color: blueviolet;
+}

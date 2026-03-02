@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#hero-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./Images/alexas_fotos-frogs-897981_1280.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 0.4rem;
+}
+
+.navbar {
+  padding: 0.8rem 1rem;
+}
+
+#hero-section > p:nth-of-type(1) {
+  width: fit-content;
+  padding: 0 5rem;
+  border-radius: 3rem;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+#hero-section h1 {
+  color: white;
+  font-size: 70px;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+#hero-section h1 span {
+  background: linear-gradient(to right, blue, yellow);
+  background-clip: text;
+  color: transparent;
+}
+
+#hero-section > p:nth-of-type(2) {
+  max-width: 400px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-btns .btn:nth-of-type(1) {
+  background-color: turquoise;
+  color: white;
+}
+
+.hero-btns .btn:nth-of-type(2) {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ccc;
+  backdrop-filter: blur(5px);
+}
+
+/* --------- PLACES SECTION --------- */
+
+#Places-section > p:nth-of-type(1) {
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+#Places-section > h1 {
+  overflow: hidden;
+  text-align: center;
+}
+
+#Places-section > p {
+  text-align: center;
+}
+
+#places-card {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem 1rem;
+}
+
+.place-card {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url(./Images/julius_silver-hallstatt-3609863_1280.jpg);
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  transition: all 400ms ease;
+}
+
+.place-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  padding: 1rem;
+  height: 100%;
+  transition: all 400ms ease;
+}
+
+.place-content > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.place-content > a {
+  color: rgb(4, 41, 4);
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0;
+  /* display: none; */
+  transition: all 200ms ease;
+}
+
+.place-card:hover {
+  background-size: 500px;
+  /* transform: scale(1,2); */
+  /* transition: all 400ms ease; */
+}
+
+.place-card:hover > .place-content > a {
+  opacity: 1;
+  transition: all 500ms ease;
+}
+
+/* -------- MEDIA QUERY FOR TABLETS --------- */
+@media screen and (max-width: 768px) {
+  body {
+    /* background-color: green; */
+  }
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  #hero-section {
+    padding: 0 2rem;
+  }
+}
+
+/* -------- MEDIA QUERY FOR SMALL DEVICES --------- */
+@media screen and (max-width: 480px) {
+  body {
+    /* background-color: red; */
+  }
+  section {
+    padding: 2rem;
+  }
+}
+#hero-section {
+  align-items: center;
+}
+#hero-section h1 {
+  text-align: center;
+}
+#hero-section p {
+  text-align: center;
+}
+/* ------------PLACES SECTION------------- */
+#places-card {
+  /* grid-template-columns: repeat(1, 1fr); */
+}
